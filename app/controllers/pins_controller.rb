@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
-    @pins = current_user.pins.all
+    @pins = Pin.all
 
     respond_to do |format|
       format.html # index.html.erb
